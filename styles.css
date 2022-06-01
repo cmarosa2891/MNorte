@@ -114,11 +114,12 @@ margin-top: 15px;
 
 p {
   font-family: 'Handlee', cursive;
-  font-size: large;
+  font-size: 1.2em;
 color: #FFFFFF;
-  text-indent: 50px;
+  text-indent: 30px;
   font-weight: bold;
   text-align: justify;
+
 
 }
 
@@ -169,18 +170,18 @@ background-color: #FFFFFF;
 
 ul{
   display: flex;
-  width: 450px;
+  width: 350px;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  margin: 20px;
+  margin: 50px;
   padding: 10px;
   border-radius: 5px;
   color: #FFFFFF;
   size: 30px;
   background-color: var(--verde);
-
 }
+
 
 .form input {
   font-family: "Roboto", sans-serif;
