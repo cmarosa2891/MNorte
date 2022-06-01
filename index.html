@@ -10,10 +10,6 @@
     Además:
     - Ser responsive
     - Estar deployado en vercel
-  
-  Creditos: (se toma de donde hay, se modifica como se necesita, y se continúa viviendo honradamente)
-  Navbar: https://codepen.io/jo_Geek/
-  Login:  https://codepen.io/colorlib/pen/rxddKy
   -->
 
 
@@ -27,6 +23,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="/Logo_verde.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Handlee&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/52b27a9892.js" crossorigin="anonymous"></script>
   <title>Maderera Norte</title>
 </head>
 
@@ -50,18 +51,22 @@
     </div>
 
     <div class="nav-links">
-      <a href="#portada" >Inicio</a>
-      <a href="#image-gal" >Imágenes</a>
-      <a href="" >Contacto</a>
-      <a href="" >Iniciar Sesión</a>
+      <a href="#portada">Inicio</a>
+      <a href="#image-gal">Imágenes</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#login">Iniciar Sesión</a>
     </div>
   </nav>
 
   <div class="portada" id="portada">
     <img src="Logo.jpg" alt="">
+    <div class="aboutus">
+      <p> En Maderera Norte nos distinguimos por la calidad de nuestros productos y servicio, desde el asesoramiento en
+        la primera consulta y hasta el momento de la entrega.  Clientes satisfechos es nuestra meta. </p><p> Desde 1994 y con la calidad de siempre, entregando buena madera!!! </p>
+    </div>
   </div>
 
-  <div class="login-page">
+  <div id="login" class="login-page">
 
     <div class="form">
       <input type='checkbox' id='form-switch'>
@@ -138,13 +143,34 @@
     </div><!-- /gallery -->
   </section>
 
-  <section>
+  <section id="contacto" class="form contacto">
+    <p>CONTACTESE CON NOSOTROS:</p>
+    <form class="form" action="">
+      <input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
+      <input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
+      <input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
+      <textarea id="subject" name="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!" required></textarea>
+      <button>Enviar</button>
+    </form>
 
-    CONTACTO
+    <iframe class="form map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.2477275885649!2d-58.9619511686251!3d-34.18481529926246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d9a7cb9efe400d!2sMaderera%20Norte!5e0!3m2!1ses!2sar!4v1654088350166!5m2!1ses!2sar"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
   </section>
+
+  <div>
+    <ul class="footer">
+      <li>Seguinos en las redes y enterate nuestras novedades!!</li>
+      <li><a href="https://es-la.facebook.com/people/Maderera-Norte/" class="fa fa-facebook">  </a></li>
+      <li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram">  </a></li>
+    </ul>
+  </div>
   <footer>
     <div class="footer">
-      <img src="Logo.jpg" alt="">
+      <a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
     </div>
 
   </footer>
