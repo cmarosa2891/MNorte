@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'segoe ui';
   height: 100%;
-  max-width: 960px;
+   max-width: 960px; 
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -21,11 +21,10 @@ body {
   align-items: center;
 }
 
-/* navbar */
 
 .nav {
   height: 48px;
-  max-width: 960px;
+   max-width: 960px; 
   width: 100%;
   background-image: url("navbar.jpg");
   background-color: var(--verde);
@@ -84,7 +83,6 @@ body {
   display: none;
 }
 
-/* portada */
 
 .portada {
   display: flex;
@@ -93,11 +91,14 @@ body {
   width: 100%;
 margin-top: 15px;
   margin-bottom: 10px;
+ 
 }
 
 .portada img {
   background-image: url("Logo_verde.jpg");
   border-radius: 5px;
+  max-height: 200px;
+  object-fit: contain;
 
 }
 
@@ -123,11 +124,11 @@ color: #FFFFFF;
 
 }
 
-/* login */
+
 
 .login-page {
   display: flex;
-  max-width: 960px;
+
   width: 100%;
   margin: auto;
   align-items: center;
@@ -256,7 +257,6 @@ ul{
 
 }
 
-/* form switcher */
 
 form {
   margin: 0 auto;
@@ -305,7 +305,7 @@ label:hover {
 
 
 
-/* navbar containers */
+
 
 .container {
   position: relative;
@@ -404,7 +404,7 @@ label:hover {
   }
 }
 
-/* Gallery */
+
 .image-gal {
   display: flex;
   margin-top: 30px;
@@ -417,7 +417,7 @@ label:hover {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-  max-width: 960px;
+ max-width: 960px; 
   justify-content: center;
 
 }
@@ -480,7 +480,7 @@ label:hover {
   }
 }
 
-/* Footer */
+
 
 .footer {
   margin: 10px;

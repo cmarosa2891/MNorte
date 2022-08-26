@@ -1,0 +1,355 @@
+@import 
+	url(https 
+		&://fonts 
+			&.googleapis 
+				&.com/css?family=Roboto 
+					&:300); 
+						:root 
+							--verde: rgb(0, 103, 41) 
+							--narnaja: rgb(235, 128, 1) 
+							--letras: rgb(254, 247, 247) 
+html 
+	background-color: #333 
+body 
+	font-family: 'segoe ui' 
+	height: 100% 
+	max-width: 960px 
+	display: flex 
+	margin: auto 
+	flex-direction: column 
+	justify-content: center 
+	align-items: center 
+.nav 
+	height: 48px 
+	max-width: 960px 
+	width: 100% 
+	background-image: url("./imagenes/navbar.jpg") 
+	background-color: var(--verde) 
+	display: flex 
+	justify-content: space-between 
+	& > .nav-header 
+		display: flex 
+		flex-direction: row
+		& > .nav-title 
+			display: inline-block 
+			font-size: 22px 
+			font-family: 'Handlee', cursive 
+			font-weight: bold 
+			color: white 
+			justify-content: center 
+			align-items: center 
+			padding: 10px 0px 0px 0px 
+			margin-bottom: 10px 
+	& > .nav-btn 
+		display: none 
+		& > label 
+			display: inline-block 
+			width: 38px 
+			height: 38px 
+			padding: 10px 
+			& > span 
+				display: block 
+				width: 25px 
+				height: 10px 
+				border-top: 2px solid #eee 
+	& > .nav-links 
+		display: flex 
+		justify-content: flex-end 
+		font-size: 18px 
+		padding-right: 50px 
+		overflow-x: hidden 
+		position: absolute 
+		right: 10px 
+		display: block 
+		background-color: #333 
+		height: 0px 
+		transition: all 0.3s ease-in 
+		overflow-y: hidden 
+		top: 50px 
+		border-radius: 10px 
+		& > a 
+			display: inline-block 
+			padding: 13px 10px 13px 10px 
+			text-decoration: none 
+			color: #efefef 
+			display: block 
+			width: 100% 
+			&:hover 
+				background-color: rgba(0, 0, 0, 0.6) 
+				color: var(--narnaja) 
+	& > #nav-check 
+		display: none 
+		&:not(:checked) 
+			& ~ .nav-links 
+				height: 0px 
+		&:checked 
+			& ~ .nav-links 
+				height: fit-content 
+				overflow-y: auto 
+.nav-logo 
+	display: flex 
+	max-height: 50px 
+	padding: 3px 8px 
+.portada 
+	display: flex 
+	flex-direction: column 
+	background-repeat: no-repeat 
+	width: 100% 
+	margin-top: 15px 
+	margin-bottom: 10px 
+	img 
+		background-image: url("./imagenes/Logo_verde.jpg") 
+		border-radius: 5px 
+		max-height: 200px 
+		object-fit: contain 
+	& > .aboutus 
+		display: flex 
+		flex-wrap: wrap 
+		margin-top: 15px 
+		margin-bottom: 15px 
+		margin: 15px 
+		border-radius: 5px 
+		padding: 15px 
+p 
+	font-family: 'Handlee', cursive 
+	font-size: 1.2em 
+	color: #FFFFFF 
+	text-indent: 30px 
+	font-weight: bold 
+	text-align: justify 
+.login-page 
+	display: flex 
+	width: 100% 
+	margin: auto 
+	align-items: center 
+	justify-content: center 
+.form 
+	z-index: 1 
+	margin-bottom: 30px 
+	padding: 30px 
+	width: 80% 
+	text-align: center 
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) 
+	border-radius: 5px 
+	.map 
+		width: 100% 
+		border: 0px 
+		margin: 0px 
+		padding: 0px 
+	input 
+		font-family: "Roboto", sans-serif 
+		outline: 0 
+		background: #f2f2f2 
+		width: 70% 
+		border: 1px solid var(--verde) 
+		margin: 0 0 15px 
+		padding: 15px 
+		box-sizing: border-box 
+		font-size: 14px 
+		border-radius: 5px 
+		min-width: 250px 
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) 
+	textarea 
+		font-family: "Roboto", sans-serif 
+		outline: 0 
+		background: #f2f2f2 
+		width: 100% 
+		min-width: 250px 
+		border: 1px solid var(--verde) 
+		margin: 0 0 15px 
+		padding: 15px 
+		box-sizing: border-box 
+		font-size: 14px 
+		border-radius: 5px 
+	button 
+		font-family: "Roboto", sans-serif 
+		text-transform: uppercase 
+		outline: 0 
+		background: var(--verde) 
+		width: 250px 
+		border: 0 
+		padding: 15px 
+		color: #FFFFFF 
+		font-size: 14px 
+		-webkit-transition: all 0.3 ease 
+		transition: all 0.3 ease 
+		cursor: pointer 
+		box-shadow: 0 0 20px 0 rgba(34, 15, 15, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) 
+		border-radius: 10px 
+	.register-form 
+		z-index: 1 
+		flex-direction: column 
+		background: #FFFFFF 
+		max-width: 360px 
+		margin: 0 auto 100px 
+		padding: 45px 
+		text-align: center 
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) 
+.contacto 
+	display: flex 
+	flex-wrap: wrap 
+	background-image: url("./imagenes/g-deck.jpg") 
+	background-size: cover 
+	background-repeat: no-repeat 
+	margin-top: 30px 
+div 
+	& > .form 
+		max-width: 300px 
+		background-color: #FFFFFF 
+ul 
+	display: flex 
+	width: 350px 
+	justify-content: space-between 
+	flex-wrap: wrap 
+	list-style: none 
+	margin: 50px 
+	padding: 10px 
+	border-radius: 5px 
+	color: #FFFFFF 
+	size: 30px 
+	background-color: var(--verde) 
+.form form button:hover,
+.form form button:active,
+.form form button:focus 
+	background: var(--narnaja) 
+	font-weight: bolder 
+.titulo 
+	font-family: Verdana, Geneva, Tahoma, sans-serif 
+	color: #CCC 
+form 
+	margin: 0 auto 
+	width: 300px 
+input 
+	margin-bottom: 3px 
+	padding: 10px 
+	width: 100% 
+	border: 1px solid #CCC 
+button 
+	padding: 10px 
+label 
+	display: flex 
+	cursor: pointer 
+	justify-content: center 
+	&:hover 
+		cursor: pointer 
+		color: var(--narnaja) 
+		font-weight: bold 
+#form-switch 
+	display: none 
+	&:checked 
+		& ~ #register-form 
+			display: block 
+		& ~ #login-form 
+			display: none 
+#register-form 
+	display: none 
+.container 
+	position: relative 
+	z-index: 3 
+	max-width: 300px 
+	margin: 0 auto 
+	.info 
+		span 
+			color: #4d4d4d 
+			font-size: 12px 
+			a 
+				color: #000000 
+				text-decoration: none 
+			.fa 
+				color: #EF3B3A 
+.container:before,
+.container:after 
+	content: "" 
+	display: block 
+	clear: both 
+*/ 
+	.container 
+		.info 
+			margin: 50px auto 
+			text-align: center 
+			h1 
+				margin: 0 0 15px 
+				padding: 0 
+				font-size: 36px 
+				font-weight: 300 
+				color: #1a1a1a 
+@media 
+	(max-width 
+		&:700px) 
+			.nav>.nav-btn {
+    display: inline-block 
+			position: absolute 
+			right: 15px 
+			top: 0px 
+	(min-width 
+		&: 
+			420px) 
+				.-fx-image-gal {
+    flex-direction: row 
+				flex-wrap: wrap 
+.nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label 
+	background-color: rgba(0, 0, 0, 0.3) 
+} 
+	.image-gal 
+		display: flex 
+		margin-top: 30px 
+	@media 
+		(min-width 
+			&: 
+				768px) 
+					.-fx-gal-item {
+    width: 33.33% 
+	.footer 
+		margin: 10px 
+.-fx-image-gal 
+	display: flex 
+	flex-direction: column 
+	flex-wrap: wrap 
+	margin: 0 auto 
+	width: 100% 
+	max-width: 960px 
+	justify-content: center 
+.-fx-gal-item 
+	display: flex 
+	width: 90% 
+	height: 250px 
+	margin: 0px 
+	padding: 0px 
+	overflow: hidden 
+	border-radius: 10px 
+	justify-content: center 
+	object-fit: contain 
+	width: 50% 
+	a 
+		padding: 0 
+		margin: 0 
+		width: 100% 
+		height: 100% 
+		background-color: white 
+.-fx-gal-image-thumb 
+	img 
+		width: 100% 
+		cursor: pointer 
+		-webkit-filter: grayscale(100%) 
+		-moz-filter: grayscale(100%) 
+		filter: grayscale(100%) 
+		transform: scale(1.7) 
+		transition: all 0.5s ease 
+	&:hover 
+		img 
+			cursor: pointer 
+			-webkit-filter: grayscale(0%) 
+			-moz-filter: grayscale(0%) 
+			filter: grayscale(0%) 
+			transform: scale(1.5) 
+			transition: all 0.5s ease 
+.footer 
+	a 
+		text-decoration: none 
+		color: white 
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24) 
+		&:hover 
+			text-decoration: none 
+			color: var(--narnaja) 
+

@@ -1,179 +1,242 @@
-<!-- DISEÑO WEB: HTML + CSS
-  Proyecto Integrador que debe contener:
-    - un navbar que navegue las diversas secciones de la web.
-    - una portada alusiva a la temática de nuestra app.
-    - Una sección de imágenes
-    - Una sección de contacto
-    - Un footer
-    - Una página para loguearse
-    - Una página para registrarse
-    Además:
-    - Ser responsive
-    - Estar deployado en vercel
-  -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="/Logo_verde.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Handlee&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/52b27a9892.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&family=Handlee&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./barstyle.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="et-hero.js">
+  <link rel="stylesheet" href="sticky.css">
   <title>Maderera Norte</title>
 </head>
 
+
 <body>
 
-  <nav class="nav">
 
-    <input type="checkbox" id="nav-check">
+
+  <!-- Hero -->
+
+  <div class="portada" id="portada">
+    <img src="./imagenes/Logo.jpg" alt="">
+    <div class="aboutus col col-lg-12">
+      <p> En Maderera Norte nos distinguimos por la calidad de nuestros productos y servicio, desde el asesoramiento en
+        la primera consulta y hasta el momento de la entrega. Clientes satisfechos es nuestra meta. </p>
+      <p> Desde 1994 y con la calidad de siempre, entregando buena madera!!! </p>
+    </div>
+  </div>
+
+
+  </section>
+
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+      <h1>ES6</h1>
+      <h3>something about es6</h3>
+    </section>
+    <section class="et-slide" id="tab-flexbox">
+      <h1>Flexbox</h1>
+      <h3>something about flexbox</h3>
+    </section>
+    <section class="et-slide" id="tab-react">
+      <h1>React</h1>
+      <h3>something about react</h3>
+    </section>
+    <section class="et-slide" id="tab-angular">
+      <h1>Angular</h1>
+      <h3>something about angular</h3>
+    </section>
+    <section class="et-slide" id="tab-other">
+      <h1>Other</h1>
+      <h3>something about other</h3>
+    </section>
+  </main>
+
+  <nav class="nav navbar navbar-light">
+
+  <!-- Sticky -->
+  <div id="navbar">
     <div class="nav-header">
-      <img class="nav-logo" src="Logo_verde.jpg" alt="">
+      <img class="nav-logo" src="./imagenes/Logo_verde.jpg" alt="">
       <div class="nav-title">
         Maderera Norte
       </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-
-    <div class="nav-links">
-      <a href="#portada">Inicio</a>
-      <a href="#image-gal">Imágenes</a>
-      <a href="#contacto">Contacto</a>
-      <a href="#login">Iniciar Sesión</a>
-    </div>
-  </nav>
-
-  <div class="portada" id="portada">
-    <img src="Logo.jpg" alt="">
-    <div class="aboutus">
-      <p> En Maderera Norte nos distinguimos por la calidad de nuestros productos y servicio, desde el asesoramiento en
-        la primera consulta y hasta el momento de la entrega.  Clientes satisfechos es nuestra meta. </p><p> Desde 1994 y con la calidad de siempre, entregando buena madera!!! </p>
-    </div>
+    <a class="et-hero-tab" href="#portada">Inicio</a>
+    <a class="et-hero-tab" href="#image-gal">Imágenes</a>
+    <a class="et-hero-tab" href="./Carrito-Compras-JavaScript/index.html">Productos</a>
+    <a class="et-hero-tab" href="#contacto">Contacto</a>
+    <a class="et-hero-tab" href="#login">Iniciar Sesión</a>
+    <span class="et-hero-tab-slider"></span>
   </div>
 
-  <div id="login" class="login-page">
+</nav>
 
-    <div class="form">
-      <input type='checkbox' id='form-switch'>
+  <div class="container-fluid">
 
-      <form id='login-form' action="" method='post'>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
-        <button type='submit'>Ingresar</button>
-        <label for='form-switch'><span>Registrate! Crear mi cuenta</span> </label>
+    <nav class="nav navbar navbar-light">
+
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img class="nav-logo" src="./imagenes/Logo_verde.jpg" alt="">
+        <div class="nav-title">
+          Maderera Norte
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+    </nav>
+
+
+
+    <div id="login" class="login-page">
+
+      <div class="form-group">
+        <input type='checkbox' id='form-switch'>
+
+        <form id='login-form' action="" method='post'>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <button type='submit'>Ingresar</button>
+          <label for='form-switch'><span>Registrate! Crear mi cuenta</span> </label>
+        </form>
+        <form id='register-form' action="" method='post'>
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Repita su Password" required>
+          <button type='submit'>Registrarse</button>
+          <label for='form-switch'>¿Ya te registraste? Ingresar</label>
+        </form>
+
+      </div>
+    </div>
+
+
+    <section id="image-gal">
+
+      <div class="-fx-image-gal">
+        <div class="-fx-gal-item" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="./imagenes/g-deck.jpg" target="_blank">
+              <img src="./imagenes/g-deck.jpg" />
+            </a>
+          </div>
+        </div><!-- /-fx-gal-item -->
+
+        <div class="-fx-gal-item">
+          <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="./imagenes/g-escalera.jpg" target="_blank">
+              <img src="./imagenes/g-escalera.jpg" />
+            </a>
+          </div>
+        </div><!-- /-fx-gal-item -->
+
+        <div class="-fx-gal-item">
+          <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="./imagenes/g-mesa.jpg" target="_blank">
+              <img src="./imagenes/g-mesa.jpg" />
+            </a>
+          </div>
+        </div><!-- /-fx-gal-item -->
+
+        <div class="-fx-gal-item">
+          <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="./imagenes/g-tablero.jpg" target="_blank">
+              <img src="./imagenes/g-tablero.jpg" />
+            </a>
+          </div>
+        </div><!-- /-fx-gal-item -->
+
+        <div class="-fx-gal-item">
+          <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="imagenes/g-vigas.jpg" target="_blank">
+              <img src="./imagenes/g-vigas.jpg" />
+            </a>
+          </div>
+        </div><!-- /-fx-gal-item -->
+
+        <div class="-fx-gal-item">
+          <div class="-fx-gal-image-thumb" tabindex="1">
+            <a href="./imagenes/g-piso.jpg" target="_blank">
+              <img src="./imagenes/g-piso.jpg" />
+            </a>
+          </div>
+        </div><!-- /-fx-gal-item -->
+      </div><!-- /gallery -->
+    </section>
+
+    <section id="contacto" class="form contacto">
+      <p>Contáctese con nosotros!</p>
+      <form class="form" action="">
+        <input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
+        <input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
+        <input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
+        <textarea id="subject" name="subject"
+          placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!" required></textarea>
+        <button>Enviar</button>
       </form>
-      <form id='register-form' action="" method='post'>
-        <input type="text" placeholder="Nombre de usuario" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type="password" placeholder="Repita su Password" required>
-        <button type='submit'>Registrarse</button>
-        <label for='form-switch'>¿Ya te registraste? Ingresar</label>
-      </form>
 
+      <iframe class="form map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.2477275885649!2d-58.9619511686251!3d-34.18481529926246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d9a7cb9efe400d!2sMaderera%20Norte!5e0!3m2!1ses!2sar!4v1654088350166!5m2!1ses!2sar"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </section>
+
+    <div>
+      <ul class="footer">
+        <li>Seguinos y enterate nuestras novedades!!</li>
+        <li><a href="https://www.facebook.com/Maderera-Norte/" class="fa fa-facebook"> </a></li>
+        <li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram"> </a></li>
+      </ul>
     </div>
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
+      </div>
+
+    </footer>
+
   </div>
-
-
-  <section id="image-gal">
-
-    <div class="-fx-image-gal">
-      <div class="-fx-gal-item">
-        <div class="-fx-gal-image-thumb" tabindex="1">
-          <a href="g-deck.jpg" target="_blank">
-            <img src="g-deck.jpg" />
-          </a>
-        </div>
-      </div><!-- /-fx-gal-item -->
-
-      <div class="-fx-gal-item">
-        <div class="-fx-gal-image-thumb" tabindex="1">
-          <a href="g-escalera.jpg" target="_blank">
-            <img src="g-escalera.jpg" />
-          </a>
-        </div>
-      </div><!-- /-fx-gal-item -->
-
-      <div class="-fx-gal-item">
-        <div class="-fx-gal-image-thumb" tabindex="1">
-          <a href="g-mesa.jpg" target="_blank">
-            <img src="g-mesa.jpg" />
-          </a>
-        </div>
-      </div><!-- /-fx-gal-item -->
-
-      <div class="-fx-gal-item">
-        <div class="-fx-gal-image-thumb" tabindex="1">
-          <a href="" target="_blank">
-            <img src="g-tablero.jpg" />
-          </a>
-        </div>
-      </div><!-- /-fx-gal-item -->
-
-      <div class="-fx-gal-item">
-        <div class="-fx-gal-image-thumb" tabindex="1">
-          <a href="" target="_blank">
-            <img src="g-vigas.jpg" />
-          </a>
-        </div>
-      </div><!-- /-fx-gal-item -->
-
-      <div class="-fx-gal-item">
-        <div class="-fx-gal-image-thumb" tabindex="1">
-          <a href="" target="_blank">
-            <img src="g-piso.jpg" />
-          </a>
-        </div>
-      </div><!-- /-fx-gal-item -->
-    </div><!-- /gallery -->
-  </section>
-
-  <section id="contacto" class="form contacto">
-    <p>Contáctese con nosotros!</p>
-    <form class="form" action="">
-      <input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
-      <input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
-      <input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
-      <textarea id="subject" name="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!" required></textarea>
-      <button>Enviar</button>
-    </form>
-
-    <iframe class="form map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.2477275885649!2d-58.9619511686251!3d-34.18481529926246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d9a7cb9efe400d!2sMaderera%20Norte!5e0!3m2!1ses!2sar!4v1654088350166!5m2!1ses!2sar"
-      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-
-  </section>
-
-  <div>
-    <ul class="footer">
-      <li>Seguinos y enterate nuestras novedades!!</li>
-      <li><a href="https://www.facebook.com/Maderera-Norte/" class="fa fa-facebook">  </a></li>
-      <li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram">  </a></li>
-    </ul>
-  </div>
-  <footer>
-    <div class="footer">
-      <a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
-    </div>
-
-  </footer>
+  <!-- SRC JavaScript -->
+  <script src="https://kit.fontawesome.com/52b27a9892.js" crossorigin="anonymous"></script>
+  <script src="et-hero.js"></script>
+  <script src="sticky.js"></script>
+  <script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'></script>
+  <script src="./aosscript.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="./barscript.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

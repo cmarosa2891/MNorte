@@ -26,4 +26,6 @@
   Fuentes:
 
   https://github.com/erickcernarequejo/Carrito-Compras-JavaScript
+  https://codepen.io/ettrics/pen/WRbGRN
+  
   
