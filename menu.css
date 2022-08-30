@@ -1,0 +1,19 @@
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+    max-width: 1200px;
+	z-index:960;
+    height: 48px;
+    width: 100%;
+    background-image: none;
+    background-color: var(--verde);
+}
+
+..nav>.nav-header>.nav-title-fixed{
+    color: var(--naranja)
+}
+.portadagrey img {
+    filter: grayscale(1);
+    transition-property: filter;
+    transition-duration: 1s; 
+  }
