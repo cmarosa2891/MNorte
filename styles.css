@@ -67,6 +67,7 @@ body {
   font-size: 18px;
   padding-right: 50px;
   overflow-x: hidden;
+  text-shadow: 12px 12px 14px black;
 }
 
 .nav>.nav-links>a {
@@ -151,7 +152,7 @@ section{
   margin-bottom: 30px;
   padding: 30px;
   width: 80%;
-  max-width: 400px;
+  max-width: 600px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 5px;
@@ -164,7 +165,13 @@ section{
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 30px;
-  max-width: 90%;
+  max-width: 100%;
+}
+
+.contacto div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 div > .form{
@@ -183,15 +190,16 @@ align-self: center;
 
 ul{
   display: flex;
-  width: 350px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   list-style: none;
-  margin: 50px;
-  padding: 10px;
+  width: 90%;
+  height: 35px;
+  margin: 10px 0px 0px 0px;
+  padding: 10px 10px 10px 10px;
   border-radius: 5px;
   color: #FFFFFF;
-  size: 30px;
+  font-size: x-large;
   background-color: var(--verde);
 }
 
@@ -200,8 +208,8 @@ ul{
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
-  width: 70%;
-  border: 1px solid var(--verde);
+  width: 90%;
+  border: 2px solid var(--verde);
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
@@ -218,7 +226,7 @@ ul{
   background: #f2f2f2;
   width: 100%;
   min-width: 250px;
-  border: 1px solid var(--verde);
+  border: 2px solid var(--verde);
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
@@ -264,8 +272,11 @@ ul{
 }
 
 .form input:active,
-.form input:hover {
+.form input:hover,
+.form textarea:hover,
+.form textarea:active  {
   border-color: var(--narnaja);
+  border-width: 3px;
 }
 .titulo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -295,6 +306,9 @@ label {
   display: flex;
   cursor: pointer;
   justify-content: center;
+  margin-top: 5px;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 label:hover {
@@ -303,6 +317,11 @@ label:hover {
   font-weight: bold;
 }
 
+button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color:var(--narnaja);
+}
 #form-switch {
   display: none
 }
@@ -318,10 +337,6 @@ label:hover {
 #form-switch:checked~#login-form {
   display: none
 }
-
-
-
-
 
 .container {
   position: relative;
@@ -448,8 +463,6 @@ label:hover {
   border-radius: 10px;
   justify-content: center;
   object-fit: contain;
-
-
 }
 
 .-fx-gal-item a {
@@ -498,18 +511,30 @@ label:hover {
 
 
 
-.footer {
-  margin: 10px;
-}
+/* Footer */
 
+.footer {
+  margin: 0px 0px 10px 0px;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+}
+.footer p{
+  font-size: 15px;
+}
+.footer span{
+  width: 55px;
+  display: block;
+}
 .footer a {
   text-decoration: none;
   color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-
+  margin-left: 30px;
 }
 
 .footer a:hover {
+  font-size: x-large;
   text-decoration: none;
   color: var(--narnaja);
 }

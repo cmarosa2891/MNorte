@@ -21,10 +21,10 @@
 	<header>
 		<div class="contenedor">
 			<nav class="nav menu">
-	
+
 				<input type="checkbox" id="nav-check">
 				<div class="nav-header">
-					<img class="nav-logo" src="Logo_verde.jpg" alt="">
+					<img class="nav-logo" src="./imagenes/Logo_verde.jpg" alt="">
 					<div class="nav-title">
 						Maderera Norte
 					</div>
@@ -36,7 +36,7 @@
 						<span></span>
 					</label>
 				</div>
-	
+
 				<div class="nav-links">
 					<a href="#portada">Inicio</a>
 					<a href="#image-gal">Imágenes</a>
@@ -47,6 +47,7 @@
 			</nav>
 		</div>
 	</header>
+	<!-- Portada -->
 	<div class="portada" id="portada">
 		<img src="./imagenes/Logo.jpg" alt="">
 		<div class="aboutus">
@@ -57,17 +58,18 @@
 			<p> Desde 1994 y con la calidad de siempre, entregando buena madera!!! </p>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<!-- Login / Registro -->
+
 		<div id="login" class="login-page">
-			<div class="form">
-				<input type='checkbox' id='form-switch'>
-				<form id='login-form' class="register-form" action="" method='post'>
+			<div >
+				<input type='checkbox' id='form-switch' >
+				<form id='login-form' class="form register-form" action="" method='post'>
 					<input type="text" placeholder="Username" required>
 					<input type="password" placeholder="Password" required>
 					<button type='submit'>Ingresar</button>
 					<label for='form-switch'><span>Registrate! Crear mi cuenta</span> </label>
 				</form>
-				<form id='register-form' class="register-form" action="" method='post'>
+				<form id='register-form' class="form register-form" action="" method='post'>
 					<input type="text" placeholder="Nombre de usuario" required>
 					<input type="email" placeholder="Email" required>
 					<input type="password" placeholder="Password" required>
@@ -77,8 +79,8 @@
 				</form>
 			</div>
 		</div>
-	</div>
 
+	<!-- Galería -->
 	<section id="image-gal">
 		<div class="-fx-image-gal">
 			<div class="-fx-gal-item" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -130,9 +132,12 @@
 			</div><!-- /-fx-gal-item -->
 		</div><!-- /gallery -->
 	</section>
-
-	<section id="contacto" class="form contacto">
+	<!-- Contacto -->
+	<section id="contacto" class="contacto">
+		<div>
 		<p>Contáctese con nosotros!</p>
+		</div>
+		<div>
 		<form class="form" action="">
 			<input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
 			<input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
@@ -141,24 +146,27 @@
 				placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!" required></textarea>
 			<button>Enviar</button>
 		</form>
+	</div>
+	<div>
 		<iframe class="form map"
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.2477275885649!2d-58.9619511686251!3d-34.18481529926246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d9a7cb9efe400d!2sMaderera%20Norte!5e0!3m2!1ses!2sar!4v1654088350166!5m2!1ses!2sar"
 			allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>	
 	</section>
-	<footer>
-		<div>
-			<ul class="footer">
-				<li>Seguinos y enterate nuestras novedades!!</li><span></span>
-				<li><a href="https://www.facebook.com/Maderera-Norte/" class="fa fa-facebook"> </a></li>
-				<li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram"> </a>
-				</li>
-			</ul>
-		</div>
+	<div>
+		<ul class="footer">
+		  <li>Seguinos y enterate nuestras novedades!!</li>
+		  <li><a href="https://www.facebook.com/Maderera-Norte/" class="fa fa-facebook">  </a></li>
+		  <li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram">  </a></li>
+		</ul>
+	  </div>
+	  <footer>
 		<div class="footer">
-			<a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
+		  <a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
 		</div>
-	</footer>
 	
+	  </footer>
+
 
 	<!-- SRC JavaScript -->
 	<script src="sticky.js"></script>
