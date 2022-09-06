@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="productos.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div id="nav" class="contenedor">
+            <nav class="nav menu">
+
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                    <img class="nav-logo" src="./imagenes/Logo_verde.jpg" alt="">
+                    <div class="nav-title">
+                        Maderera Norte
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <div class="nav-links">
+                    <a href="./#nav">Inicio</a>
+                    <a href="./#image-gal">Imágenes</a>
+                    <a href="./productos.html" id="productos">Productos</a>
+                    <a href="./#contacto">Contacto</a>
+                    <a href="./#login">Iniciar Sesión</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Productos -->
+    <div class="productos-container">
+        <div class="">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-md-12 row"></main>
+            <!-- Carrito -->
+            <form id="miCarrito" action="">
+                <div class="col-md-12 ">
+                    <h5>
+                        <p class="text-center">Lista de Compras</p>
+                    </h5>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-center">Total: <span id="total"></span>&dollar;</p>
+
+                    <div class="productos-botones">
+                        <a href="" id="boton-vaciar" class="btn btn-danger  btn-block">Vaciar</a>
+                        <a href="productos.html" class="btn btn-primary btn-block">Seguir comprando</a>
+                        <a href="./#contacto" class="btn btn-primary btn-block" id="enviar-consulta">Enviar Consulta</a>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+
+
+    <script src="productos.js"></script>
+</body>
+
+</html>

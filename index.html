@@ -15,11 +15,10 @@
 	<title>Maderera Norte</title>
 </head>
 
-
-
 <body>
+	<!-- Navbar -->
 	<header>
-		<div class="contenedor">
+		<div id="nav" class="contenedor">
 			<nav class="nav menu">
 
 				<input type="checkbox" id="nav-check">
@@ -38,9 +37,9 @@
 				</div>
 
 				<div class="nav-links">
-					<a href="#portada">Inicio</a>
+					<a href="#nav">Inicio</a>
 					<a href="#image-gal">Imágenes</a>
-					<a href="./Carrito-Compras-JavaScript/index.html">Productos</a>
+					<a href="productos.html" id="productos">Productos</a>
 					<a href="#contacto">Contacto</a>
 					<a href="#login">Iniciar Sesión</a>
 				</div>
@@ -60,25 +59,25 @@
 	</div>
 	<!-- Login / Registro -->
 
-		<div id="login" class="login-page">
-			<div >
-				<input type='checkbox' id='form-switch' >
-				<form id='login-form' class="form register-form" action="" method='post'>
-					<input type="text" placeholder="Username" required>
-					<input type="password" placeholder="Password" required>
-					<button type='submit'>Ingresar</button>
-					<label for='form-switch'><span>Registrate! Crear mi cuenta</span> </label>
-				</form>
-				<form id='register-form' class="form register-form" action="" method='post'>
-					<input type="text" placeholder="Nombre de usuario" required>
-					<input type="email" placeholder="Email" required>
-					<input type="password" placeholder="Password" required>
-					<input type="password" placeholder="Repita su Password" required>
-					<button type='submit'>Registrarse</button>
-					<label for='form-switch'> <span> ¿Ya te registraste? Ingresar </span></label>
-				</form>
-			</div>
+	<div id="login" class="login-page">
+		<div>
+			<input type='checkbox' id='form-switch'>
+			<form id='login-form' class="form register-form" action="" method='post'>
+				<input type="text" placeholder="Username" required>
+				<input type="password" placeholder="Password" required>
+				<button type='submit'>Ingresar</button>
+				<label for='form-switch'><span>Registrate! Crear mi cuenta</span> </label>
+			</form>
+			<form id='register-form' class="form register-form" action="" method='post'>
+				<input type="text" placeholder="Nombre de usuario" required>
+				<input type="email" placeholder="Email" required>
+				<input type="password" placeholder="Password" required>
+				<input type="password" placeholder="Repita su Password" required>
+				<button type='submit'>Registrarse</button>
+				<label for='form-switch'> <span> ¿Ya te registraste? Ingresar </span></label>
+			</form>
 		</div>
+	</div>
 
 	<!-- Galería -->
 	<section id="image-gal">
@@ -135,47 +134,49 @@
 	<!-- Contacto -->
 	<section id="contacto" class="contacto">
 		<div>
-		<p>Contáctese con nosotros!</p>
+			<p>Contáctese con nosotros!</p>
 		</div>
 		<div>
-		<form class="form" action="">
-			<input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
-			<input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
-			<input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
-			<textarea id="subject" name="subject"
-				placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!" required></textarea>
-			<button>Enviar</button>
-		</form>
-	</div>
-	<div>
-		<iframe class="form map"
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.2477275885649!2d-58.9619511686251!3d-34.18481529926246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d9a7cb9efe400d!2sMaderera%20Norte!5e0!3m2!1ses!2sar!4v1654088350166!5m2!1ses!2sar"
-			allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>	
+			<form class="form" action="">
+				<input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
+				<input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
+				<input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
+				<textarea id="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!"
+					required>	</textarea>
+				<button>Enviar</button>
+				<div id="carrito"></div>
+			</form>
+		</div>
+		<div>
+			<iframe class="form map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.2477275885649!2d-58.9619511686251!3d-34.18481529926246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3d9a7cb9efe400d!2sMaderera%20Norte!5e0!3m2!1ses!2sar!4v1654088350166!5m2!1ses!2sar"
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
 	</section>
 	<div>
 		<ul class="footer">
-		  <li>Seguinos y enterate nuestras novedades!!</li>
-		  <li><a href="https://www.facebook.com/Maderera-Norte/" class="fa fa-facebook">  </a></li>
-		  <li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram">  </a></li>
+			<li>Seguinos y enterate nuestras novedades!!</li>
+			<li><a href="https://www.facebook.com/Maderera-Norte/" class="fa fa-facebook"> </a></li>
+			<li><a href="https://www.instagram.com/maderera.norte/" class="fa fa-instagram"> </a></li>
 		</ul>
-	  </div>
-	  <footer>
+	</div>
+	<footer>
 		<div class="footer">
-		  <a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
+			<a href="https://github.com/cmarosa2891" class="fa fa-github"> Desarrollado por Cmarosa2891 </a>
 		</div>
-	
-	  </footer>
+	</footer>
+
 
 
 	<!-- SRC JavaScript -->
-	<script src="sticky.js"></script>
 	<script src="https://kit.fontawesome.com/52b27a9892.js" crossorigin="anonymous"></script>
 	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'>
-	</script>
-	<script src="./aosscript.js"></script>
+	<script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'>	</script>
 	<script src="menu.js"></script>
+	<script src="productos.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="consulta.js"></script>
 </body>
 
 </html>
