@@ -1,3 +1,17 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM cargado');
+});
+
+let carrito = [];
+const divisa = '$';
+const DOMitems = document.querySelector('#items');
+const DOMcarrito = document.querySelector('#carrito');
+const DOMcompra = document.querySelector('#listaDeCompras');
+const DOMtotal = document.querySelector('#total');
+const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+const miLocalStorage = window.localStorage;
+
+
 document.addEventListener('DOMContentLoaded', ()  => {
 
     // Variables
@@ -52,13 +66,14 @@ document.addEventListener('DOMContentLoaded', ()  => {
         }
     ];
 
-    let carrito = [];
-    const divisa = '$';
-    const DOMitems = document.querySelector('#items');
-    const DOMcarrito = document.querySelector('#carrito');
-    const DOMtotal = document.querySelector('#total');
-    const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-    const miLocalStorage = window.localStorage;
+    // let carrito = [];
+    // const divisa = '$';
+    // const DOMitems = document.querySelector('#items');
+    // const DOMcarrito = document.querySelector('#carrito');
+    // const DOMcompra = document.querySelector('#compra');
+    // const DOMtotal = document.querySelector('#total');
+    // const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+    // const miLocalStorage = window.localStorage;
 
     // Funciones
 
@@ -67,21 +82,21 @@ document.addEventListener('DOMContentLoaded', ()  => {
     */
 
     function renderizarProductos() {
-        baseDeDatos.forEach((info) => {
+        baseDeDatos.forEach((info) => { // base de datos de productos
             // Estructura
             const miNodo = document.createElement('div');
-            miNodo.classList.add('card', 'col-sm-3');
+            miNodo.classList.add('card', 'col-sm-3');    // agregado de clase
             // Body
             const miNodoCardBody = document.createElement('div');
-            miNodoCardBody.classList.add('card-body');
+            miNodoCardBody.classList.add('card-body'); // agregado de clase
             // Titulo
             const miNodoTitle = document.createElement('h5');
-            miNodoTitle.classList.add('card-title');
+            miNodoTitle.classList.add('card-title'); // agregado de clase
             miNodoTitle.textContent = info.nombre;
             // Imagen
             const miNodoImagen = document.createElement('img');
-            miNodoImagen.classList.add('img-fluid');
-            miNodoImagen.setAttribute('src', info.imagen);
+            miNodoImagen.classList.add('img-fluid'); // agregado de clase
+            miNodoImagen.setAttribute('src', info.imagen); 
             // Precio
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
@@ -138,6 +153,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
             const miNodo = document.createElement('li');
             miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
             miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
+            // Creamos el nodo del item del carrito
+            const miNodo2 = document.createElement('li');
+            miNodo2.classList.add('list-group-item', 'text-right', 'mx-2');
+            miNodo2.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
+            
             // Boton de borrar
             const miBoton = document.createElement('button');
             miBoton.classList.add('btn', 'btn-danger', 'mx-5');
@@ -148,6 +168,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
             // Mezclamos nodos
             miNodo.appendChild(miBoton);
             DOMcarrito.appendChild(miNodo);
+            //DOMcompra.appendChild(miNodo2);
         });
         // Renderizamos el precio total en el HTML
         DOMtotal.textContent = calcularTotal();
@@ -213,35 +234,24 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
 
     // Eventos
-    DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
+    if (DOMbotonVaciar) {
+        DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+      }
+    // DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
     // Inicio
     cargarCarritoDeLocalStorage();
     renderizarProductos();
     renderizarCarrito();
-
-
-
-
-var para=document.createElement("ul");
-var node=document.createTextNode('carrito_consulta');
-para.appendChild(node);
-
-var element=document.getElementById('carrito_consulta');
-element.appendChild(para);
-
+ 
+    console.log(`${carrito}`)
 });
 
 
-const clickProductos = () => {
-    alert("el usr hizo click en productos")
-}
 
-const productos = document.getElementById("productos");
-productos.addEventListener('click', clickProductos);
-
-
-var subject=document.getElementById('subject');
-subject = JSON.parse(miLocalStorage.getItem('carrito'));
-
+const listaDeCompras = document.querySelector('#listaDeCompras');
+const nuevop = document.createElement("div");
+nuevop.textContent = `nuevo Div desde JS a reemplazar por el carrito carrito = ${carrito}`;
+listaDeCompras.appendChild(nuevop);
 

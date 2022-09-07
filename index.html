@@ -137,14 +137,16 @@
 			<p>Contáctese con nosotros!</p>
 		</div>
 		<div>
-			<form class="form" action="">
+			<form id="contactform" class="form" action="">
 				<input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
 				<input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
 				<input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
 				<textarea id="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!"
-					required>	</textarea>
+					required=""></textarea>
 				<button>Enviar</button>
-				<div id="carrito"></div>
+				<div id="listaDeCompras">
+					<p style="color: black;">Esta es la lista de Compras (desde HTML para ver el div)</p>
+				</div>
 			</form>
 		</div>
 		<div>
@@ -173,10 +175,10 @@
 	<script src="https://kit.fontawesome.com/52b27a9892.js" crossorigin="anonymous"></script>
 	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 	<script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'>	</script>
-	<script src="menu.js"></script>
-	<script src="productos.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="consulta.js"></script>
+	<script src="productos.js"></script>
+	<script src="menu.js"></script>
+
 </body>
 
 </html>

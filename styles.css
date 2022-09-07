@@ -104,7 +104,7 @@ body {
 }
 
 .portada img {
-  background-image: url("Logo_verde.jpg");
+  background-image: url("./imagenes/Logo_verde.jpg");
   background-repeat: no-repeat;
   border-radius: 5px;
   object-fit: contain;
@@ -204,7 +204,7 @@ ul {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
-  width: 90%;
+  width: 95%;
   border: 2px solid var(--verde);
   margin: 0 0 15px;
   padding: 15px;
@@ -219,7 +219,7 @@ ul {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
-  width: 100%;
+  width: 95%;
   min-width: 250px;
   border: 2px solid var(--verde);
   margin: 0 0 15px;
@@ -227,6 +227,22 @@ ul {
   box-sizing: border-box;
   font-size: 14px;
   border-radius: 5px;
+  height: 135px;
+}
+
+.form #listaDeCompras {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 95%;
+  min-width: 250px;
+  border: 2px solid var(--verde);
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+  height: 135px;
 }
 
 .form button {
