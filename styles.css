@@ -253,6 +253,7 @@ ul {
   width: 250px;
   border: 0;
   padding: 15px;
+  margin-bottom: 15px;
   color: #FFFFFF;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
@@ -345,6 +346,7 @@ button:hover {
 #form-switch:checked~#login-form {
   display: none
 }
+
 
 .container {
   position: relative;

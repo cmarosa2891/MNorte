@@ -1,0 +1,21 @@
+.list-group{
+    color: black;
+    display: block;
+    text-align: right;
+    width: 95%;
+}
+
+.presupuesto{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.presupuesto>ul{
+    display: block;
+    width: 90%;
+}
+
+.display{
+    display: none;
+}

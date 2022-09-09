@@ -45,6 +45,19 @@
             </nav>
         </div>
     </header>
+
+
+        <!-- Búsqueda -->
+    <div id="search-container" class="">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Ingrese su búsqueda..."
+        />
+        <button id="search">Search</button>
+      </div>
+
+
     <!-- Productos -->
     <div class="productos-container">
         <div class="">
@@ -54,10 +67,10 @@
             <form id="miCarrito" action="">
                 <div class="col-md-12 ">
                     <h5>
-                        <p class="text-center">Lista de Compras</p>
+                        <p class="text-center">Lista de Compras id="carrito"</p>
                     </h5>
                     <!-- Elementos del carrito -->
-                    <ul id="carrito" class="list-group"></ul>
+                    <ul id="carrito" class="list-group"></ul> <!-- id="carrito" id="listaDeCompras"  -->
 
                     <hr>
                     <!-- Precio total -->
@@ -69,42 +82,13 @@
                         <a href="./#contacto" class="btn btn-primary btn-block" id="enviar-consulta">Enviar Consulta</a>
                     </div>
                 </div>
+            </form>
         </div>
-        </form>
     </div>
 
-
-
-     <!-- Productos -->
-     <div class="productos-container">
-        <div class="">
-            <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-md-12 row"></main>
-            <!-- Carrito -->
-            <form id="miCarrito" action="">
-                <div class="col-md-12 ">
-                    <h5>
-                        <p class="text-center">Lista de Compras</p>
-                    </h5>
-                    <!-- Elementos del carrito -->
-                    <ul id="carrito2" class="list-group"></ul>
-
-                    <hr>
-                    <!-- Precio total -->
-                    <p class="text-center">Total: <span id="total"></span>&dollar;</p>
-
-                    <div class="productos-botones">
-                        <a href="" id="boton-vaciar" class="btn btn-danger  btn-block">Vaciar</a>
-                        <a href="productos.html" class="btn btn-primary btn-block">Seguir comprando</a>
-                        <a href="./#contacto" class="btn btn-primary btn-block" id="enviar-consulta">Enviar Consulta</a>
-                    </div>
-                </div>
-        </div>
-        </form>
-    </div>
 
     <script src="productos.js"></script>
-	<script src="menu.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

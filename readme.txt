@@ -23,9 +23,13 @@
   🧷 Se puede Elegir entre un Ecommerce o Un sitio de Noticias.
   -->
 
-  Fuentes:
+  Fuentes consultadas:
 
   https://github.com/erickcernarequejo/Carrito-Compras-JavaScript
   https://codepen.io/ettrics/pen/WRbGRN
+
+  https://morioh.com/p/a964f4713a13
+  https://programadorwebvalencia.com/javascript-ejemplo-carrito-de-compra/
+
   
   

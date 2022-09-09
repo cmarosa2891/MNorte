@@ -12,6 +12,7 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="listaDeCompras.css">
 	<title>Maderera Norte</title>
 </head>
 
@@ -141,12 +142,13 @@
 				<input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
 				<input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
 				<input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
-				<textarea id="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!"
-					required=""></textarea>
-				<button>Enviar</button>
-				<div id="listaDeCompras">
-					<p style="color: black;">Esta es la lista de Compras (desde HTML para ver el div)</p>
+				<textarea id="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!"></textarea>
+
+				<div id="presupuesto" class="presupuesto">
+					<h4>Productos requeridos:</h4>
+					<ul id="listaDeCompras" class="list-group"></ul>
 				</div>
+				<button>Enviar</button>
 			</form>
 		</div>
 		<div>
@@ -175,9 +177,11 @@
 	<script src="https://kit.fontawesome.com/52b27a9892.js" crossorigin="anonymous"></script>
 	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 	<script src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js'>	</script>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="productos.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<!-- <script src="productos.js"></script> -->
 	<script src="menu.js"></script>
+	<script src="listaDeCompras.js"></script>
 
 </body>
 
