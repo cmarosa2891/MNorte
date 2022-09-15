@@ -8,7 +8,9 @@
 .presupuesto{
     display: flex;
     flex-direction: row;
-    width: 95%;
+    max-width: 95%;
+    justify-content: center;
+    align-items: center;
 }
 
 .presupuesto>ul{

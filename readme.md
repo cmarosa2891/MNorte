@@ -13,7 +13,7 @@
 
   AGREGADO JS: HTML + CSS + JS
   👉Los requisitos que vamos a tomar en cuenta para evaluar son:
-    - Renderizar HTML desde JS
+    - Renderizar HTML desde JS 
     - Utilizar Buenas prácticas de estructura del Código, Ejemplo: Módulos ES6
     - Deberá tener al menos un formulario en que capture información para crear un componente HTML.
     - Deberá utilizar localStorage, para persistir datos en el sitio.

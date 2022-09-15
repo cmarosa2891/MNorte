@@ -135,18 +135,19 @@
 	<!-- Contacto -->
 	<section id="contacto" class="contacto">
 		<div>
-			<p>Contáctese con nosotros!</p>
-		</div>
-		<div>
 			<form id="contactform" class="form" action="">
+				<div>
+					<h3>Contáctese con nosotros!</h3>
+
+				</div>
 				<input type="text" id="name" name="firstname" placeholder="Ingrese su nombre" required>
 				<input type="text" id="lname" name="lastname" placeholder="Ingrese su email" required>
 				<input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono" required>
-				<textarea id="subject" placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!"></textarea>
-
+				<textarea id="subject"
+					placeholder="Déjenos su consulta o mensaje y responderemos a la brevedad!!!"></textarea>
+				<h4>Productos requeridos:</h4>
+				<ul id="listaDeCompras" class="list-group"></ul>
 				<div id="presupuesto" class="presupuesto">
-					<h4>Productos requeridos:</h4>
-					<ul id="listaDeCompras" class="list-group"></ul>
 				</div>
 				<button>Enviar</button>
 			</form>
@@ -181,7 +182,7 @@
 		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<!-- <script src="productos.js"></script> -->
 	<script src="menu.js"></script>
-	<script src="listaDeCompras.js"></script>
+	<script type="module" src="listaDeCompras.js"></script>
 
 </body>
 

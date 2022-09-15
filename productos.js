@@ -16,6 +16,20 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
 
 
     // Variables
+    // const baseDeDatos = JSON.parse(productosBD);  
+    // import baseDeDatos from './basededatos.json' ; 
+    // console.log(baseDeDatos);
+    // let objDB
+    // fetch( "./basededatos.json" )
+    // .then( response => {
+    //     return response.json();
+    // } )
+    // .then( data => console.log(data))
+    // .then(data => objDB=data)
+    
+    // console.log(objDB);
+    // const baseDeDatos = objDB;
+    // const baseDeDatos = JSON.parse(productosBD);
     const baseDeDatos = [
         {
             id: 1,
@@ -83,13 +97,17 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
     */
 
     const renderizarProductos = () => {               //     function renderizarProductos () {
+
         baseDeDatos.forEach( ( info ) => { // base de datos de productos
+
             // Estructura
             const miNodo = document.createElement( 'div' );
-            miNodo.classList.add( 'card', 'col-sm-3' );    // agregado de clase
+            miNodo.classList.add( 'cards', 'col-sm-3' );    // agregado de clase   cambiado a clase cards
             // Body
             const miNodoCardBody = document.createElement( 'div' );
             miNodoCardBody.classList.add( 'card-body' ); // agregado de clase
+            miNodoCardBody.classList.add( 'card' ); // agregado de clase
+
             // Titulo
             const miNodoTitle = document.createElement( 'h5' );
             miNodoTitle.classList.add( 'card-title' ); // agregado de clase
@@ -115,6 +133,7 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
             miNodoCardBody.appendChild( miNodoBoton );
             miNodo.appendChild( miNodoCardBody );
             DOMitems.appendChild( miNodo ); // = document.querySelector('#items');
+
         } );
     }
 
@@ -247,11 +266,37 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
     }
     // DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
+    let busqueda = document.getElementById( 'search-input' );
+
+
+    //Filtro
+    const d = document;
+    function searchFilters ( input, selector ) {
+        d.addEventListener( "keyup", ( e ) => {
+            if ( e.target.matches( input ) ) {
+                console.log( e.target.value );
+
+                if ( e.key === "Escape" ) e.target.value = "";
+
+                d.querySelectorAll( selector ).forEach( ( el ) =>
+                    el.textContent.toLowerCase().includes( e.target.value )
+                        ? el.classList.remove( "filter" )
+                        : el.classList.add( "filter" ) )
+                renderizarCarrito( 'reload' )
+            }
+        } )
+    }
+
     // Inicio
     cargarCarritoDeLocalStorage();
     cargarListadeComprasDeLocalStorage()
     renderizarProductos();
+    searchFilters( ".card-filter", ".cards" );
     renderizarCarrito();
-    renderizarListaDeCompras()
+    console.log('Hola');
 } );
 
+
+
+
+ 

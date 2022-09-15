@@ -47,15 +47,11 @@
     </header>
 
 
-        <!-- Búsqueda -->
+    <!-- Búsqueda -->
     <div id="search-container" class="">
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Ingrese su búsqueda..."
-        />
-        <button id="search">Search</button>
-      </div>
+        <input type="search" id="search-input" class="card-filter" placeholder="Ingrese texto para filtrar productos" />
+
+    </div>
 
 
     <!-- Productos -->
@@ -66,7 +62,7 @@
             <!-- Carrito -->
             <form id="miCarrito" action="">
                 <div class="col-md-12 ">
-                    <h5>
+                    <h5 class="filter">
                         <p class="text-center">Lista de Compras id="carrito"</p>
                     </h5>
                     <!-- Elementos del carrito -->
@@ -75,19 +71,21 @@
                     <hr>
                     <!-- Precio total -->
                     <p class="text-center">Total: <span id="total"></span>&dollar;</p>
+                    <p class="text-center"> (los precios serán confirmados una vez formalizado el presupuesto)</p>
 
                     <div class="productos-botones">
                         <a href="" id="boton-vaciar" class="btn btn-danger  btn-block">Vaciar</a>
                         <a href="productos.html" class="btn btn-primary btn-block">Seguir comprando</a>
-                        <a href="./#contacto" class="btn btn-primary btn-block" id="enviar-consulta">Enviar Consulta</a>
+                        <a href="./#contacto" class="btn btn-primary btn-block" id="enviar-consulta">Solicitar Presupuesto</a>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 
-
-    <script src="productos.js"></script>
+    <!-- Script -->
+    <script src="basededatos.json"></script>
+    <script type="module" src="productos.js"></script>
     <script src="menu.js"></script>
 </body>
 
