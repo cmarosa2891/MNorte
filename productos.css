@@ -126,3 +126,13 @@ form{
     color: red;
     visibility: hidden;
   }
+
+  .nav-links{
+z-index: 5;
+  }
+
+  @media (max-width: 495px) {
+.list-group-item {
+      font-size: medium;
+    }
+  }

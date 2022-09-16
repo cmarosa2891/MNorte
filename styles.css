@@ -510,7 +510,7 @@ button:hover {
   transition: all 0.5s ease;
 }
 
-@media (min-width: 420px) {
+@media (max-width: 420px) {
   .-fx-image-gal {
     flex-direction: row;
     flex-wrap: wrap;
@@ -518,6 +518,12 @@ button:hover {
 
   .-fx-gal-item {
     width: 50%;
+  }
+}
+
+  @media (max-width: 495px) {
+  #footer-text{
+    display: none;
   }
 }
 
