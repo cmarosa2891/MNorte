@@ -53,7 +53,7 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
             id: 4,
             nombre: 'Verde Foresta',
             precio: 1800,
-            imagen: '/imagenes/cart/Pintura_verde_obra.webp'
+            imagen: '/imagenes/cart/pintura_verde_obra.webp'
         },
         {
             id: 5,
@@ -65,7 +65,7 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
             id: 6,
             nombre: 'Listón Kiri [ml]',
             precio: 350,
-            imagen: '/imagenes/cart/liston_kiri.webp'
+            imagen: '/imagenes/cart/Liston_Kiri.webp'
         },
         {
             id: 7,
@@ -77,7 +77,7 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
             id: 8,
             nombre: 'Tirante Saligna [ml]',
             precio: 218,
-            imagen: '/imagenes/cart/Tirante_Saligna.webp'
+            imagen: '/imagenes/cart/tirante_saligna.webp'
         }
     ];
 
