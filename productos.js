@@ -35,49 +35,49 @@ window.addEventListener( 'DOMContentLoaded', ( event ) => {
             id: 1,
             nombre: 'Wichi - Aislante',
             precio: 3500,
-            imagen: '/imagenes/cart/aislante_pro.jpg'
+            imagen: '/imagenes/cart/aislante_pro.webp'
         },
         {
             id: 2,
             nombre: 'Aislante - Nacional',
             precio: 2700,
-            imagen: '/imagenes/cart/aislante.jpg'
+            imagen: '/imagenes/cart/aislante.webp'
         },
         {
             id: 3,
             nombre: 'Cerco de Obra - Altura 1,50m x 2m',
             precio: 2000,
-            imagen: '/imagenes/cart/cerco_verde_obra.jpg'
+            imagen: '/imagenes/cart/cerco_verde_obra.webp'
         },
         {
             id: 4,
             nombre: 'Verde Foresta',
             precio: 1800,
-            imagen: '/imagenes/cart/Pintura_verde_obra.jpg'
+            imagen: '/imagenes/cart/Pintura_verde_obra.webp'
         },
         {
             id: 5,
             nombre: 'Placa Telgopor 1m2 5cm espesor',
             precio: 176,
-            imagen: '/imagenes/cart/placa_telgopor.jpg'
+            imagen: '/imagenes/cart/placa_telgopor.webp'
         },
         {
             id: 6,
             nombre: 'Listón Kiri [ml]',
             precio: 350,
-            imagen: '/imagenes/cart/liston_kiri.jpg'
+            imagen: '/imagenes/cart/liston_kiri.webp'
         },
         {
             id: 7,
             nombre: 'Liston Eucalipto [m2]',
             precio: 260,
-            imagen: '/imagenes/cart/liston_eucalipto.jpg'
+            imagen: '/imagenes/cart/liston_eucalipto.webp'
         },
         {
             id: 8,
             nombre: 'Tirante Saligna [ml]',
             precio: 218,
-            imagen: '/imagenes/cart/Tirante_Saligna.jpg'
+            imagen: '/imagenes/cart/Tirante_Saligna.webp'
         }
     ];
 
